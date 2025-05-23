@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dragonball karakterek</title>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container py-4">
     <h1 class="mb-4">Dragonball karakterek</h1>
-    <button class="mb-4" onclick="elemekBetoltese()">Karakterek betöltése</button>
-
-    <div id="image_container" class="row gy-4"></div>
+    <button class="mb-4" id="lekeresgomb" onclick="elemekBetoltese()">Karakterek betöltése</button>
+    <div class="egesz">
+        <div id="image_container" class="row gy-4"></div>
+    </div>
   </div>
 
   <script>
