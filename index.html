@@ -13,5 +13,16 @@
     <div id="termeklista" class="container">
         <div class="row" id="termekrow"></div>
     </div>
+
+    <script>
+        const API_KEY = "https://www.dragonball-api.com/api"
+
+        async function elemekBetoltese(){
+            const res = await fetch('https://dragonball-api.com/api/characters', {
+                headers: { "x-api-key": API_KEY }
+            });
+            const data = await res.json();
+        }
+    </script>
 </body>
 </html>
